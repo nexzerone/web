@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>nexZerone | Empowering Your Journey in Cloud Technology and Web Development!</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/logo_cloud2.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+          
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .course-container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #4a4a8c;
+        }
+
+        /* Course Content Card */
+        .course-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            transition: transform 0.3s;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Icon */
+        .icon {
+            font-size: 40px;
+            color: #4a90e2;
+            margin-right: 10px;
+        }
+
+        /* Text Content */
+        .content {
+            display: flex;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 1.2em;
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Subtopic List */
+        .subtopics {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .subtopics li {
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+            padding: 0px 0;
+        }
+
+        .subtopic-icon {
+            font-size: 18px;
+            color: #4a90e2;
+            margin-right: 10px;
+        }
+
+        /* Button */
+        .start-btn {
+            padding: 10px 15px;
+            background-color: #4a90e2;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+            align-self: flex-end;
+            margin-top: 10px;
+        }
+
+        .start-btn:hover {
+            background-color: #357abd;
+        }
+    </style>    
+</head>
+<body class="host_version"> 
+
+
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+                    <img src="images/logo_cloud2.png" width="100" height="70" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="azure.html">Azure </a>
+								<a class="dropdown-item" href="ansible.html">Ansible </a>
+								<a class="dropdown-item" href="aws.html">AWS </a>
+                                <a class="dropdown-item" href="terraform.html">Terraform </a>
+                                <a class="dropdown-item" href="python.html">Python </a>
+                                <a class="dropdown-item" href="flask.html">Flask </a>
+                          
+							</div>
+						</li>
+						<!-- <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="blog.html">Blog </a>
+								<a class="dropdown-item" href="blog-single.html">Blog single </a>
+							</div>
+						</li> -->
+						
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>+91 78069 10468</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	
+
+
+	
+	<div class="hmv-box">
+		<div class="container">
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Introduction to AWS</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Overview of cloud models: Public, Private, Hybrid?</li>
+                    <li><span class="subtopic-icon">🔹</span>AWS Global Infrastructure (Regions, Availability Zones, and Edge Locations)</li>
+                    <li><span class="subtopic-icon">🔹</span>AWS Pricing and Free Tier</li>
+                    <li><span class="subtopic-icon">🔹</span>Setting up an AWS Account and AWS Management Consoler</li>
+                    
+                </ul>
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title"> AWS Identity and Access Management (IAM)</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>IAM Users, Groups, and Roles</li>
+                    <li><span class="subtopic-icon">🔹</span>IAM Policies and Permissions</li>
+                    <li><span class="subtopic-icon">🔹</span>Multi-Factor Authentication (MFA) and Best Practices for Security</li>
+                    <li><span class="subtopic-icon">🔹</span>Identity Federation and AWS Single Sign-On (SSO)</li>
+                    
+                </ul>
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title" >Compute Services</p>
+                       
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Amazon EC2 (Elastic Compute Cloud)</li>
+                    <li><span class="subtopic-icon">🔹</span>EC2 Instances and Instance Types</li>
+                    <li><span class="subtopic-icon">🔹</span>Launching, Configuring, and Managing EC2 Instances</li>
+                    <li><span class="subtopic-icon">🔹</span>Security Groups, Key Pairs, and Elastic IPs</li>
+                    <li><span class="subtopic-icon">🔹</span>Auto Scaling and Load Balancing (Elastic Load Balancer, Auto Scaling Groups)
+                    </li>
+                   
+                </ul>
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">AWS Lambda</p>
+                       
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>	Serverless Concepts and Lambda Functions</li>
+                    <li><span class="subtopic-icon">🔹</span>Creating and Triggering Lambda Functions</li>
+                    <li><span class="subtopic-icon">🔹</span>Integrating Lambda with Other AWS Services</li>
+                  
+     
+                </ul>
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Storage Services</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Amazon S3 (Simple Storage Service)</li>
+                    <li><span class="subtopic-icon">🔹</span>	S3 Buckets, Objects, and Storage Classes</li>
+                    <li><span class="subtopic-icon">🔹</span>Managing Permissions and Bucket Policies</li>
+                    <li><span class="subtopic-icon">🔹</span>	S3 Versioning, Lifecycle Policies, and Cross-Region Replication</li>
+            </div>
+            
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title"> Databases on AWS</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>setting Up and Managing RDS Instances</li>
+                    <li><span class="subtopic-icon">🔹</span>Automated Backups, Snapshots, and Replicas
+                    </li>
+                 
+                 
+                    </ul>
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Networking</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>	Amazon VPC (Virtual Private Cloud)</li>
+                    <li><span class="subtopic-icon">🔹</span>	VPC Components (Subnets, Route Tables, NAT, and Internet Gateway)</li>
+                    <li><span class="subtopic-icon">🔹</span>	security Groups and Network ACLs</li>
+                    <li><span class="subtopic-icon">🔹</span >Route 53, Domain Registration, DNS, and Traffic Management</li>
+
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title"> Security and Compliance</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>AWS Shared Responsibility Model</li>
+                    <li><span class="subtopic-icon">🔹</span>AWS Shield and WAF (Web Application Firewall)</li>
+                    <li><span class="subtopic-icon">🔹</span>AWS Secrets Manager and Key Management Service (KMS)</li>
+
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Monitoring and Logging</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>CloudWatch Metrics, Alarms, and Logs</li>
+                    <li><span class="subtopic-icon">🔹</span>Custom Metrics and Monitoring EC2</li>
+                    <li><span class="subtopic-icon">🔹</span>Tracking User Activities and API Calls</li>
+                    <li><span class="subtopic-icon">🔹</span>Cost Optimization, Security, and Fault Tolerance Checks</li>
+                    
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Management and Developer Tools</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Infrastructure as Code (IaC) and Stack Management</li>
+                    <li><span class="subtopic-icon">🔹</span>CI/CD Pipeline Automation and Deployment</li>
+
+                    
+            </div>
+           
+		</div>
+	</div>
+
+ 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> At Nexzerone, we are passionate about empowering individuals and organizations with the skills needed to excel in today’s fast-evolving tech landscape. We specialize in providing expert-led training programs in cloud technologies, DevOps, and web development, designed to equip professionals with practical knowledge and hands-on experienc.</p>
+                        <div class="footer-right">
+							<ul class="footer-links-soi">
+								<!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+							</ul><!-- end links -->
+						</div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                          
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+                   
+                       
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">nexzerone@gmail.com</a></li>
+                            <li><a href="#">www.nextzerone.com</a></li>
+                            <li>First Floor , AA Towers , Aaalamaram bus top, 625018</li>
+                            <li>Near  Fathima college indoor statium</li>
+                            <li>+91 78069 10468, +91 98429 81902</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name"></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

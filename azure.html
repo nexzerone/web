@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>nexZerone | Empowering Your Journey in Cloud Technology and Web Development!</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/logo_cloud2.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+          
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .course-container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #4a4a8c;
+        }
+
+        /* Course Content Card */
+        .course-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            transition: transform 0.3s;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Icon */
+        .icon {
+            font-size: 40px;
+            color: #4a90e2;
+            margin-right: 10px;
+        }
+
+        /* Text Content */
+        .content {
+            display: flex;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 1.2em;
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Subtopic List */
+        .subtopics {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .subtopics li {
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+            padding: 0px 0;
+        }
+
+        .subtopic-icon {
+            font-size: 18px;
+            color: #4a90e2;
+            margin-right: 10px;
+        }
+
+        /* Button */
+        .start-btn {
+            padding: 10px 15px;
+            background-color: #4a90e2;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+            align-self: flex-end;
+            margin-top: 10px;
+        }
+
+        .start-btn:hover {
+            background-color: #357abd;
+        }
+    </style>    
+</head>
+<body class="host_version"> 
+
+
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+                    <img src="images/logo_cloud2.png" width="100" height="70" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="azure.html">Azure </a>
+								<a class="dropdown-item" href="ansible.html">Ansible </a>
+								<a class="dropdown-item" href="aws.html">AWS </a>
+                                <a class="dropdown-item" href="terraform.html">Terraform </a>
+                                <a class="dropdown-item" href="python.html">Python </a>
+                                <a class="dropdown-item" href="flask.html">Flask </a>
+                          
+							</div>
+						</li>
+						<!-- <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="blog.html">Blog </a>
+								<a class="dropdown-item" href="blog-single.html">Blog single </a>
+							</div>
+						</li> -->
+						
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>+91 78069 10468</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+
+	
+	<div class="hmv-box">
+		<div class="container">
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title"> Understanding Cloud Computing</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Overview of cloud models: Public, Private, Hybrid?</li>
+                    <li><span class="subtopic-icon">🔹</span>Cloud service models: IaaS, PaaS, SaaS</li>
+                    <li><span class="subtopic-icon">🔹</span>Benefits and use cases of cloud computing</li>
+                    
+                </ul>
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title"> Introduction to Microsoft Azure</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>What is Microsoft Azure?</li>
+                    <li><span class="subtopic-icon">🔹</span>Azure global infrastructure: Regions and Availability Zones</li>
+                    <li><span class="subtopic-icon">🔹</span>Key Azure components and services overview</li>
+
+                    
+                </ul>
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title" >Getting Started with Azure Portal</p>
+                       
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Understanding Azure Resource Groups</li>
+                    <li><span class="subtopic-icon">🔹</span>Introduction to Azure Marketplace and how to find services</li>
+                    <li><span class="subtopic-icon">🔹</span>Creating your first Azure account and exploring the portal</li>
+                  
+                   
+                </ul>
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Core Azure Services</p>
+                       
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>	Introduction to Virtual Machines (VMs) and Virtual Machine Scale Sets</li>
+                    <li><span class="subtopic-icon">🔹</span>Lab: Deploying a Virtual Machine and connecting to it</li>
+
+                  
+     
+                </ul>
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Networking Services</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Overview of Azure Virtual Network (VNet)</li>
+                    <li><span class="subtopic-icon">🔹</span>	Lab: Creating a Virtual Network and Subnets</li>
+                  
+            </div>
+            
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title"> Storage Services</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Introduction to Azure Storage types: Blob, File, Table, and Queue storage</li>
+                    <li><span class="subtopic-icon">🔹</span>Using Azure Blob Storage for object storage</li>
+                    <li><span class="subtopic-icon">🔹</span>Introduction to Azure Storage accounts</li>
+                    <li><span class="subtopic-icon">🔹</span>Lab: Creating an Azure Storage Account and uploading files to Blob Storage</li> 
+ 
+                 
+                    </ul>
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Databases in Azure</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>	Azure SQL Database</li>
+                    <li><span class="subtopic-icon">🔹</span>	Overview of managed database services</li>
+                    <li><span class="subtopic-icon">🔹</span>	Deploying an Azure SQL Database</li>
+                    <li><span class="subtopic-icon">🔹</span> Basic SQL commands and querying Azure SQL</li>
+
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title"> Azure Identity and Security</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Overview of Azure AD and identity management</li>
+                    <li><span class="subtopic-icon">🔹</span>Users, groups, and roles in Azure AD</li>
+                    <li><span class="subtopic-icon">🔹</span>Lab: Creating users and groups in Azure AD</li>
+
+      
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Role-Based Access Control (RBAC) and Policies</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Understanding role-based access control in Azure</li>
+                    <li><span class="subtopic-icon">🔹</span>Managing permissions with Azure RBAC</li>
+                    <li><span class="subtopic-icon">🔹</span>Lab: Assigning roles to users and applying policies</li>
+                    
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Security Center and Azure Key Vault</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Managing secrets and certificates with Azure Key Vault</li>
+                    <li><span class="subtopic-icon">🔹</span>Lab: Storing secrets and accessing them through Key Vault</li>
+
+                    
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Monitoring and Management Toolst</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Setting up Azure Monitor for metrics and logs</li>
+                    <li><span class="subtopic-icon">🔹</span>Creating alerts and automated actions</li>
+
+                    
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Cost Management and Budgeting</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Overview of Azure Cost Management and Billing</li>
+                    <li><span class="subtopic-icon">🔹</span>Setting up budgets and cost alerts</li>
+                    <li><span class="subtopic-icon">🔹</span>Lab: Reviewing and managing costs of resources</li>
+                    
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Automation with Azure CLI, PowerShell, and Azure Automation</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Using Azure CLI and Azure PowerShell for scriptin</li>
+                    <li><span class="subtopic-icon">🔹</span>Introduction to Azure Automation and Runbooks</li>
+                    <li><span class="subtopic-icon">🔹</span>Creating a simple PowerShell Runbook to automate VM start/stop</li>
+                    
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title">Azure App Services</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Overview of App Service and hosting plans</li>
+                    <li><span class="subtopic-icon">🔹</span>Deploying a web app to Azure App Service</li>
+                    <li><span class="subtopic-icon">🔹</span>Creating a simple web app in Azure</li>
+                    
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title"> DevOps and CI/CD in Azure</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Overview of Azure DevOps tools (Repos, Pipelines, Boards)</li>
+                    <li><span class="subtopic-icon">🔹</span>Setting up Azure DevOps account and project</li>
+                    <li><span class="subtopic-icon">🔹</span>Creating a simple web app in Azure</li>
+                    
+            </div>
+            <div class="course-card">
+                <div class="content">
+                    <div class="icon">📘</div>
+                    <div>
+                        <p class="title"> Building a CI/CD Pipeline with Azure DevOps</p>
+                        
+                    </div>
+                </div>
+                <!-- Subtopics List -->
+                <ul class="subtopics">
+                    <li><span class="subtopic-icon">🔹</span>Introduction to continuous integration and continuous delivery (CI/CD)</li>
+                    <li><span class="subtopic-icon">🔹</span>Configuring a basic pipeline for a web app/li>
+                    <li><span class="subtopic-icon">🔹</span>Deploying code changes automatically with Azure Pipelines</li>
+                    
+            </div>
+		</div>
+	</div>
+
+ 
+ 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> At Nexzerone, we are passionate about empowering individuals and organizations with the skills needed to excel in today’s fast-evolving tech landscape. We specialize in providing expert-led training programs in cloud technologies, DevOps, and web development, designed to equip professionals with practical knowledge and hands-on experienc.</p>
+                        <div class="footer-right">
+							<ul class="footer-links-soi">
+								<!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+							</ul><!-- end links -->
+						</div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                          
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+                   
+                       
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">nextzerone@gmail.com</a></li>
+                            <li><a href="#">www.nexzerone.com</a></li>
+                            <li>First Floor , AA Towers , Aaalamaram bus top, 625018</li>
+                            <li>Near  Fathima college indoor statium</li>
+                            <li>+91 78069 10468, +91 98429 81902</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name"></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
